@@ -122,6 +122,8 @@ body{
     }
 }
 
+/*Versão Mobile*/
+
 @media (min-width: 769px){
     .teclas button{
         width: 68px;
@@ -139,5 +141,3 @@ body{
         font-size: 2em;
     }
 }
-
-

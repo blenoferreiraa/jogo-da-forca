@@ -209,6 +209,7 @@ const palavras = [
     }
 ];
 
+//Gerar palavra aleatoria
 
 criarPalavraSecreta();
 function criarPalavraSecreta(){
@@ -217,6 +218,8 @@ function criarPalavraSecreta(){
     palavraSecretaSorteada = palavras[indexPalavra].nome;
     palavraSecretaCategoria = palavras[indexPalavra].categoria;
 }
+
+//Montar Palavra na Tela
 
 montarPalavraNaTela();
 function montarPalavraNaTela(){
@@ -321,6 +324,8 @@ function abreModal(titulo, mensagem){
         show: true
     });
 }
+
+//Botão de Recomeçar
 
 let bntReiniciar = document.querySelector("#btnReiniciar")
 bntReiniciar.addEventListener("click", function(){
