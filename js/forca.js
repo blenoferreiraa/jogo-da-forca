@@ -207,6 +207,7 @@ const palavras = [
         nome: "HIPOPOTAMO",
         categoria:"ANIMAIS"
     }
+
 ];
 
 //Gerar palavra aleatoria
