@@ -3,210 +3,311 @@ let listaDinamica = [];
 let palavraSecretaCategoria;
 let palavraSecretaSorteada;
 const palavras = [
+
     palavra001 = {
+        nome: "FLAMENGO",
+        categoria:"TIME DE FUTEBOL"
+    },
+
+    palavra002 = {
+        nome: "FLUMINENSE",
+        categoria:"TIME DE FUTEBOL"
+    },
+
+    palavra003 = {
+        nome: "VASCO",
+        categoria:"TIME DE FUTEBOL"
+    
+    },
+
+    palavra004 = {
+        nome: "BOTAFOGO",
+        categoria:"TIME DE FUTEBOL"
+    },
+
+    palavra005 = {
+        nome: "CORINTHIANS",
+        categoria:"TIME DE FUTEBOL"
+    },
+
+    palavra006 = {
+        nome: "SAOPAULO",
+        categoria:"TIME DE FUTEBOL"
+    },
+
+    palavra007 = {
+        nome: "PALMEIRAS",
+        categoria:"TIME DE FUTEBOL"
+    },
+
+    palavra008 = {
+        nome: "SANTOS",
+        categoria:"TIME DE FUTEBOL"
+    },
+
+    palavra009 = {
         nome: "IRLANDA",
         categoria:"LUGARES"
     },
-    palavra002 = {
-        nome: "EQUADOR",
-        categoria:"LUGARES"
-    },
-    palavra003 = {
-        nome: "CHILE",
-        categoria:"LUGARES"
-    },
-    palavra004 = {
-        nome: "INDONESIA",
-        categoria:"LUGARES"
-    },
-    palavra005 = {
-        nome: "MALDIVAS",
-        categoria:"LUGARES"
-    },
-    palavra006 = {
-        nome: "INGLATERRA",
-        categoria:"LUGARES"
-    },
-    palavra007 = {
-        nome: "GROELANDIA",
-        categoria:"LUGARES"
-    },
-    palavra008 = {
-        nome: "UZBEQUISTAO",
-        categoria:"LUGARES"
-    },
-    palavra009 = {
-        nome: "INDONESIA",
-        categoria:"LUGARES"
-    },
+
     palavra010 = {
-        nome: "CREGUENHEM",
+        nome: "RIODEJANEIRO",
         categoria:"LUGARES"
     },
+
     palavra011 = {
-        nome: "BICICLETA",
-        categoria:"TRANSPORTE"
+        nome: "BRASIL",
+        categoria:"LUGARES"
     },
+
     palavra012 = {
-        nome: "LANCHA",
-        categoria:"TRANSPORTE"
+        nome: "FRANCA",
+        categoria:"LUGARES"
     },
     palavra013 = {
-        nome: "NAVIO",
-        categoria:"TRANSPORTE"
+        nome: "ESPIRITOSANTO",
+        categoria:"LUGARES"
     },
+
     palavra014 = {
-        nome: "TELEFERICO",
-        categoria:"TRANSPORTE"
+        nome: "PORTOALEGRE",
+        categoria:"LUGARES"
     },
+
     palavra015 = {
-        nome: "MOTOCICLETA",
-        categoria:"TRANSPORTE"
+        nome: "NOVAZELANDIA",
+        categoria:"LUGARES"
     },
+
     palavra016 = {
-        nome: "BARCO",
-        categoria:"TRANSPORTE"
+        nome: "ESPANHA",
+        categoria:"LUGARES"
     },
+    
     palavra017 = {
-        nome: "AERONAVE",
-        categoria:"TRANSPORTE"
+        nome: "CROACIA",
+        categoria:"LUGARES"
     },
+
     palavra018 = {
-        nome: "TREM",
-        categoria:"TRANSPORTE"
+        nome: "PORTODEGALINHAS",
+        categoria:"LUGARES"
     },
+
     palavra019 = {
-        nome: "CAIAQUE",
-        categoria:"TRANSPORTE"
+        nome: "COPACABANA",
+        categoria:"LUGARES"
     },
+
     palavra020 = {
-        nome: "FUNICULAR",
-        categoria:"TRANSPORTE"
+        nome: "MINASGERAIS",
+        categoria:"LUGARES"
     },
+
     palavra021 = {
-        nome: "XICARA",
-        categoria:"OBJETOS"
+        nome: "FACA",
+        categoria:"OBJETO"
     },
+
     palavra022 = {
-        nome: "MOEDA",
-        categoria:"OBJETOS"
+        nome: "DADO",
+        categoria:"OBJETO"
     },
+
     palavra023 = {
-        nome: "ESPARADRAPO",
-        categoria:"OBJETOS"
+        nome: "LIVRO",
+        categoria:"OBJETO"
     },
+
     palavra024 = {
-        nome: "SINO",
-        categoria:"OBJETOS"
+        nome: "CADERNO",
+        categoria:"OBJETO"
     },
+
     palavra025 = {
-        nome: "CHUVEIRO",
-        categoria:"OBJETOS"
+        nome: "CAIXA",
+        categoria:"OBJETO"
     },
+
     palavra026 = {
-        nome: "TAMBORETE",
-        categoria:"OBJETOS"
+        nome: "MOUSE",
+        categoria:"OBJETO"
     },
+
     palavra027 = {
-        nome: "LAMPADA",
-        categoria:"OBJETOS"
+        nome: "CADEIRA",
+        categoria:"OBJETO"
     },
+
     palavra028 = {
-        nome: "BOCAL",
-        categoria:"OBJETOS"
+        nome: "SAPATO",
+        categoria:"OBJETO"
     },
+
     palavra029 = {
-        nome: "CORTINA",
-        categoria:"OBJETOS"
+        nome: "GARFO",
+        categoria:"OBJETO"
     },
+
     palavra030 = {
-        nome: "LAPIS",
-        categoria:"OBJETOS"
+        nome: "GARRAFA",
+        categoria:"OBJETO"
     },
+
     palavra031 = {
-        nome: "MELANCIA",
-        categoria:"ALIMENTOS"
+        nome: "ARROZ",
+        categoria:"COMIDA"
     },
+
     palavra032 = {
-        nome: "AMENDOIM",
-        categoria:"ALIMENTOS"
+        nome: "FEIJAO",
+        categoria:"COMIDA"
     },
+
     palavra033 = {
-        nome: "ESFIRRA",
-        categoria:"ALIMENTOS"
+        nome: "MACARRAO",
+        categoria:"COMIDA"
     },
+
     palavra034 = {
-        nome: "GOROROBA",
-        categoria:"ALIMENTOS"
+        nome: "BATATA",
+        categoria:"COMIDA"
     },
+
     palavra035 = {
-        nome: "JANTAR",
-        categoria:"ALIMENTOS"
+        nome: "FAROFA",
+        categoria:"COMIDA"
     },
+
     palavra036 = {
-        nome: "SABOROSO",
-        categoria:"ALIMENTOS"
+        nome: "LASANHA",
+        categoria:"COMIDA"
     },
+
     palavra037 = {
-        nome: "DESJEJUM",
-        categoria:"ALIMENTOS"
+        nome: "SOPA",
+        categoria:"COMIDA"
     },
+
     palavra038 = {
-        nome: "MASTIGAR",
-        categoria:"ALIMENTOS"
+        nome: "PAO",
+        categoria:"COMIDA"
     },
+
     palavra039 = {
-        nome: "ENGOLIR",
-        categoria:"ALIMENTOS"
+        nome: "BOLO",
+        categoria:"COMIDA"
     },
+
     palavra040 = {
-        nome: "DOCERIA",
-        categoria:"ALIMENTOS"
+        nome: "PIZZA",
+        categoria:"COMIDA"
     },
-    palavra040 = {
-        nome: "DRAGAO",
-        categoria:"ANIMAIS"
-    },
+
     palavra041 = {
-        nome: "GALINHA",
-        categoria:"ANIMAIS"
+        nome: "APPLE",
+        categoria:"MARCA"
     },
+
     palavra042 = {
-        nome: "PAVAO",
-        categoria:"ANIMAIS"
+        nome: "MOTOROLA",
+        categoria:"MARCA"
     },
+
     palavra043 = {
-        nome: "CAMELO",
-        categoria:"ANIMAIS"
+        nome: "MONDIAL",
+        categoria:"MARCA"
     },
+
     palavra044 = {
-        nome: "PERU",
-        categoria:"ANIMAIS"
+        nome: "VIGOR",
+        categoria:"MARCA"
     },
+
     palavra045 = {
-        nome: "ZEBRA",
-        categoria:"ANIMAIS"
+        nome: "NESTLE",
+        categoria:"MARCA"
     },
+
     palavra046 = {
-        nome: "DROMEDARIO",
-        categoria:"ANIMAIS"
+        nome: "LACTA",
+        categoria:"MARCA"
     },
+
     palavra047 = {
-        nome: "CALANGO",
-        categoria:"ANIMAIS"
+        nome: "VOLVO",
+        categoria:"MARCA"
     },
+
     palavra048 = {
-        nome: "SAGUI",
-        categoria:"ANIMAIS"
+        nome: "VOLKSWAGEN",
+        categoria:"MARCA"
     },
+
     palavra049 = {
-        nome: "LAGARTIXA",
-        categoria:"ANIMAIS"
+        nome: "FORD",
+        categoria:"MARCA"
     },
+
     palavra050 = {
+        nome: "COCACOLA",
+        categoria:"MARCA"
+    },
+
+    palavra051 = {
+        nome: "COBRA",
+        categoria:"ANIMAL"
+    },
+
+    palavra052 = {
+        nome: "VACA",
+        categoria:"ANIMAL"
+    },
+
+    palavra053 = {
+        nome: "ELEFANTE",
+        categoria:"ANIMAL"
+    },
+
+    palavra054 = {
+        nome: "CACHORRO",
+        categoria:"ANIMAL"
+    },
+
+    palavra055 = {
+        nome: "GATO",
+        categoria:"ANIMAL"
+    },
+
+    palavra056 = {
+        nome: "CAVALO",
+        categoria:"ANIMAL"
+    },
+
+    palavra057 = {
         nome: "HIPOPOTAMO",
-        categoria:"ANIMAIS"
-    }
+        categoria:"ANIMAL"
+    },
+
+    palavra058 = {
+        nome: "TARTARUGA",
+        categoria:"ANIMAL"
+    },
+
+    palavra059 = {
+        nome: "LEAO",
+        categoria:"ANIMAL"
+    },
+
+    palavra060 = {
+        nome: "TIGRE",
+        categoria:"ANIMAL"
+    },
+
+    palavra061 = {
+        nome: "LIQUIDIFICADOR",
+        categoria:"ELETROPORTATEIS"
+    },
 
 ];
 
