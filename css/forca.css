@@ -137,6 +137,18 @@ footer {
     #categoria{
         font-size: 1.6em;
     }
+
+    .footer{
+        display: flexbox;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        align-content: center;
+        display: flex;
+        position: absolute;
+        right: -100px;
+    }
 }
 
 /*Versão Mobile*/
@@ -156,5 +168,11 @@ footer {
 
     #categoria{
         font-size: 2em;
+    }
+
+    footer{
+        display: flex;
+        position: absolute;
+        left: -500px;
     }
 }
