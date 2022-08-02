@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    max-width: 100%;
 }
 
 body{
@@ -78,47 +79,63 @@ body{
     font-size: 1.2em;
 }
 
-footer {
-   
-    font-size: 14px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    position: absolute;
-    margin-bottom: 10px;
-    left: 510px;
-    bottom: -150px;
-    color: rgba(5, 5, 5, 0.9);
-    font-weight: bold;
-    padding-bottom: 20px;
+.footer{
+   display: flexbox;
+   position: absolute;
+   height: 33px;
+   justify-content: center;
+   align-items: center;
+   font-size: 15px;
+   border: none;
+   margin: 0px 0px 0px;
+
 }
 
 @media (min-width: 321px){
     .teclas button{
-        width: 25px;
-        height: 25px;
+        width: 20px;
+        height: 20px;
     }
     #categoria{
-        font-size: 1.3em;
+        font-size: 1.2em;
     }
+
+    .footer {
+        display: flexbox;
+        position: absolute;
+        height: 33px;
+        justify-content: center;
+        align-items: center;
+        font-size: 9.5px;
+        border: none;
+        margin: 0px 0px 0px;
+        left: 90px;
+     
+     }
+     .footer-pc {
+        
+    }
+     
 }
 
 @media (min-width: 376px){
     .teclas button{
-        width: 30px;
-        height: 30px;
+        width: 25x;
+        height: 25px;
     }
     #palavra-secreta{
-        font-size: 1.3em;
+        font-size: 1.2em;
     }
     .letras{
-        width: 18px;
+        width: 15px;
     }
 
     #categoria{
-        font-size: 1.5em;
+        font-size: 1.3em;
+    }
+
+    .footer-pc {
+        opacity: 0%;
     }
 }
 
@@ -147,7 +164,12 @@ footer {
         align-content: center;
         display: flex;
         position: absolute;
-        right: -100px;
+        right: 70px;
+        font-size: 12px;
+    }
+
+    .footer-pc {
+        opacity: 0%;
     }
 }
 
@@ -170,9 +192,8 @@ footer {
         font-size: 2em;
     }
 
-    footer{
-        display: flex;
-        position: absolute;
-        left: -500px;
+    .footer-pc {
+        opacity: 0%;
     }
+
 }
