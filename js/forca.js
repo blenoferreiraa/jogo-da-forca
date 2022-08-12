@@ -705,7 +705,160 @@ const palavras = [
         categoria:"NACIONALIDADE"
     },
 
+    palavra142 = {
+        nome: "JOGAR",
+        categoria:"VERBOS"
+    },
 
+    palavra143 = {
+        nome: "APRENDER",
+        categoria:"VERBOS"
+    },
+
+    palavra144 = {
+        nome: "DORMIR",
+        categoria:"VERBOS"
+    },
+
+    palavra145 = {
+        nome: "CHORAR",
+        categoria:"VERBOS"
+    },
+
+    palavra146 = {
+        nome: "TORCER",
+        categoria:"VERBOS"
+    },
+
+    palavra147 = {
+        nome: "ESTUDAR",
+        categoria:"VERBOS"
+    },
+
+    palavra148 = {
+        nome: "VIAJAR",
+        categoria:"VERBOS"
+    },
+
+    palavra149 = {
+        nome: "COMER",
+        categoria:"VERBOS"
+    },
+    
+    palavra150 = {
+        nome: "COMPREENDER",
+        categoria:"VERBOS"
+    },
+
+    palavra151 = {
+        nome: "ESCREVER",
+        categoria:"VERBOS"
+    },
+
+    palavra152 = {
+        nome: "SIMULAR",
+        categoria:"VERBOS"
+    },
+
+    palavra153 = {
+        nome: "PLANTAR",
+        categoria:"VERBOS"
+    },
+
+    palavra154 = {
+        nome: "CORRER",
+        categoria:"VERBOS"
+    },
+
+    palavra155 = {
+        nome: "DESORGANIZAR",
+        categoria:"VERBOS"
+    },
+
+    palavra156 = {
+        nome: "DESENHHAR",
+        categoria:"VERBOS"
+    },
+
+    palavra157 = {
+        nome: "SOLTAR",
+        categoria:"VERBOS"
+    },
+
+    palavra158 = {
+        nome: "PRENDER",
+        categoria:"VERBOS"
+    },
+
+    palavra159 = {
+        nome: "ARREPIAR",
+        categoria:"VERBOS"
+    },
+
+    palavra160 = {
+        nome: "ARRANHAR",
+        categoria:"VERBOS"
+    },
+
+    palavra161 = {
+        nome: "DESTRUIR",
+        categoria:"VERBOS"
+    },
+
+    palavra162 = {
+        nome: "CONSTRUIR",
+        categoria:"VERBOS"
+    },
+
+    palavra163 = {
+        nome: "TRABALHAR",
+        categoria:"VERBOS"
+    },
+
+    palavra164 = {
+        nome: "LIMPAR",
+        categoria:"VERBOS"
+    },
+
+    palavra165 = {
+        nome: "VENDER",
+        categoria:"VERBOS"
+    },
+
+    palavra166 = {
+        nome: "COMPRAR",
+        categoria:"VERBOS"
+    },
+
+    palavra167 = {
+        nome: "MACHUCAR",
+        categoria:"VERBOS"
+    },
+
+    palavra168 = {
+        nome: "VIAJAR",
+        categoria:"VERBOS"
+    },
+
+    palavra169 = {
+        nome: "TRANSFERIR",
+        categoria:"VERBOS"
+    },
+
+    palavra170  = {
+        nome: "ALFABETIZAR",
+        categoria:"VERBOS"
+    },
+
+    palavra171 = {
+        nome: "IDENTIFICAR",
+        categoria:"VERBOS"
+    },
+
+    palavra172 = {
+        nome: "IDOLATRAR",
+        categoria:"VERBOS"
+    },
 
 ];
 
@@ -715,7 +868,7 @@ criarPalavraSecreta();
 function criarPalavraSecreta(){
     const indexPalavra = parseInt(Math.random() * palavras.length)
     
-    palavraSecretaSorteada = palavras[indexPalavra].nome;
+    palavraSecretaSorteada = palavras[indexPalavra].nome,
     palavraSecretaCategoria = palavras[indexPalavra].categoria;
 }
 
