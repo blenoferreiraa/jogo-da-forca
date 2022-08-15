@@ -109,9 +109,10 @@ body{
         font-size: 9.5px;
         border: none;
         margin: 0px 0px 0px;
-        left: 90px;
+        left: 145px;
      
      }
+     
      .footer-pc {
         
     }
@@ -164,7 +165,7 @@ body{
         align-content: center;
         display: flex;
         position: absolute;
-        right: 70px;
+        right: 142px;
         font-size: 12px;
     }
 
