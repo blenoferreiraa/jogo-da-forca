@@ -860,6 +860,210 @@ const palavras = [
         categoria:"VERBOS"
     },
 
+    palavra173 = {
+        nome: "IRLANDA",
+        categoria:"LUGARES"
+    },
+    palavra174 = {
+        nome: "EQUADOR",
+        categoria:"LUGARES"
+    },
+    palavra175 = {
+        nome: "CHILE",
+        categoria:"LUGARES"
+    },
+    palavra175 = {
+        nome: "INDONESIA",
+        categoria:"LUGARES"
+    },
+    palavra176 = {
+        nome: "MALDIVAS",
+        categoria:"LUGARES"
+    },
+    palavra177 = {
+        nome: "INGLATERRA",
+        categoria:"LUGARES"
+    },
+    palavra178 = {
+        nome: "GROELANDIA",
+        categoria:"LUGARES"
+    },
+    palavra179 = {
+        nome: "UZBEQUISTAO",
+        categoria:"LUGARES"
+    },
+    palavra180 = {
+        nome: "INDONESIA",
+        categoria:"LUGARES"
+    },
+    palavra181 = {
+        nome: "CREGUENHEM",
+        categoria:"LUGARES"
+    },
+    palavra182 = {
+        nome: "BICICLETA",
+        categoria:"TRANSPORTE"
+    },
+    palavra183 = {
+        nome: "LANCHA",
+        categoria:"TRANSPORTE"
+    },
+    palavra184 = {
+        nome: "NAVIO",
+        categoria:"TRANSPORTE"
+    },
+    palavra185 = {
+        nome: "TELEFERICO",
+        categoria:"TRANSPORTE"
+    },
+    palavra186 = {
+        nome: "MOTOCICLETA",
+        categoria:"TRANSPORTE"
+    },
+    palavra187 = {
+        nome: "BARCO",
+        categoria:"TRANSPORTE"
+    },
+    palavra188 = {
+        nome: "AERONAVE",
+        categoria:"TRANSPORTE"
+    },
+    palavra189 = {
+        nome: "TREM",
+        categoria:"TRANSPORTE"
+    },
+    palavra190 = {
+        nome: "CAIAQUE",
+        categoria:"TRANSPORTE"
+    },
+    palavra191 = {
+        nome: "FUNICULAR",
+        categoria:"TRANSPORTE"
+    },
+    palavra192 = {
+        nome: "XICARA",
+        categoria:"OBJETOS"
+    },
+    palavra193 = {
+        nome: "MOEDA",
+        categoria:"OBJETOS"
+    },
+    palavra194 = {
+        nome: "ESPARADRAPO",
+        categoria:"OBJETOS"
+    },
+    palavra195 = {
+        nome: "SINO",
+        categoria:"OBJETOS"
+    },
+    palavra196 = {
+        nome: "CHUVEIRO",
+        categoria:"OBJETOS"
+    },
+    palavra197 = {
+        nome: "TAMBORETE",
+        categoria:"OBJETOS"
+    },
+    palavra198 = {
+        nome: "LAMPADA",
+        categoria:"OBJETOS"
+    },
+    palavra199 = {
+        nome: "BOCAL",
+        categoria:"OBJETOS"
+    },
+    palavra200 = {
+        nome: "CORTINA",
+        categoria:"OBJETOS"
+    },
+    palavra201 = {
+        nome: "LAPIS",
+        categoria:"OBJETOS"
+    },
+    palavra202 = {
+        nome: "MELANCIA",
+        categoria:"ALIMENTOS"
+    },
+    palavra203 = {
+        nome: "AMENDOIM",
+        categoria:"ALIMENTOS"
+    },
+    palavra204 = {
+        nome: "ESFIRRA",
+        categoria:"ALIMENTOS"
+    },
+    palavra205 = {
+        nome: "GOROROBA",
+        categoria:"ALIMENTOS"
+    },
+    palavra206 = {
+        nome: "JANTAR",
+        categoria:"ALIMENTOS"
+    },
+    palavra207 = {
+        nome: "SABOROSO",
+        categoria:"ALIMENTOS"
+    },
+    palavra208 = {
+        nome: "DESJEJUM",
+        categoria:"ALIMENTOS"
+    },
+    palavra209 = {
+        nome: "MASTIGAR",
+        categoria:"ALIMENTOS"
+    },
+    palavra210 = {
+        nome: "ENGOLIR",
+        categoria:"ALIMENTOS"
+    },
+    palavra211 = {
+        nome: "DOCERIA",
+        categoria:"ALIMENTOS"
+    },
+    palavra212 = {
+        nome: "DRAGAO",
+        categoria:"ANIMAIS"
+    },
+    palavra213 = {
+        nome: "GALINHA",
+        categoria:"ANIMAIS"
+    },
+    palavra214 = {
+        nome: "PAVAO",
+        categoria:"ANIMAIS"
+    },
+    palavra215 = {
+        nome: "CAMELO",
+        categoria:"ANIMAIS"
+    },
+    palavra216 = {
+        nome: "PERU",
+        categoria:"ANIMAIS"
+    },
+    palavra217 = {
+        nome: "ZEBRA",
+        categoria:"ANIMAIS"
+    },
+    palavra218 = {
+        nome: "DROMEDARIO",
+        categoria:"ANIMAIS"
+    },
+    palavra219 = {
+        nome: "CALANGO",
+        categoria:"ANIMAIS"
+    },
+    palavra220 = {
+        nome: "SAGUI",
+        categoria:"ANIMAIS"
+    },
+    palavra221 = {
+        nome: "LAGARTIXA",
+        categoria:"ANIMAIS"
+    },
+    palavra222 = {
+        nome: "HIPOPOTAMO",
+        categoria:"ANIMAIS"
+    }
 ];
 
 //Gerar palavra aleatoria
@@ -868,7 +1072,7 @@ criarPalavraSecreta();
 function criarPalavraSecreta(){
     const indexPalavra = parseInt(Math.random() * palavras.length)
     
-    palavraSecretaSorteada = palavras[indexPalavra].nome,
+    palavraSecretaSorteada = palavras[indexPalavra].nome;
     palavraSecretaCategoria = palavras[indexPalavra].categoria;
 }
 
@@ -984,7 +1188,4 @@ let bntReiniciar = document.querySelector("#btnReiniciar")
 bntReiniciar.addEventListener("click", function(){
     location.reload();
 });
-
-
-
 
